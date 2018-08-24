@@ -36,6 +36,7 @@ final class CurrencyCell: UITableViewCell {
     
     func updateAcronym(acronym: String) {
         textLabel?.text = acronym
+        detailTextLabel?.text = Currency.currencyDescription(by: acronym)
     }
     
     func updateRate(rate: Double) {
